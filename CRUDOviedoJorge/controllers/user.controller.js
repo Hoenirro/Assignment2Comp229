@@ -7,6 +7,6 @@ module.exports.save = async (req, res) => {
 }
 
 module.exports.find = async (req, res) => {
-    let result = await UserModel.find(req.params)
+    let result = await UserModel.findById(req.params.id)
     res.json(result)
 }

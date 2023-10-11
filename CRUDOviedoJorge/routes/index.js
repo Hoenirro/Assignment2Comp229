@@ -4,7 +4,7 @@ var apiRouter = require('./api');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Welcome to MarketStore App' });
 });
 
 router.use('/api', apiRouter)
